@@ -10,6 +10,14 @@ def foo1():
     a = 1
     b = 2
     return a,b
+a = [1,2]
+for j in range(3):
+    for i in a:
+        print(i, end=' ')
+    print('')
 
-a, b = foo1()
-print(a, b)
+if 6 in range(5,6):
+    print('zai')
+
+dic = {'a': [1, 2]}
+print(dic['a'][0])

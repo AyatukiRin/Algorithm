@@ -39,7 +39,7 @@ print(change_time)
 n = int(input())
 i = 1
 m = []
-while i < n:
+while i < n:    # 用这个来对给定多行多词的数据一次性接收
     m += list(map(int, input().split()))
     i = len(m)
 change_time = 0
