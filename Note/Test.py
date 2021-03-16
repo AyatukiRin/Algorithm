@@ -26,9 +26,17 @@
 # print(5 // 0)   # 地板除
 
 
-a = {1: 3, 2: 2, 3: 1 }
-for value in a.values():
-    print(value)
+# a = {1: 3, 2: 2, 3: 1 }
+# for value in a.values():
+#     print(value)
 
 
 # print(5 % 3)
+
+# for i in reversed(range(5)):
+#     print(i)
+
+
+a = '1'
+b = '2'
+print(a + b)
