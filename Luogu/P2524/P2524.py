@@ -13,15 +13,12 @@ def factorial(num_position):
 
 girl_num = int(input())
 list_num = list(input())
-if girl_num == 9:
-    print(362880)
-else:
-    final_result = 0
-    for position, num in enumerate(list_num[:]):
-        checked_num_list = check(num)
-        final_result += len(checked_num_list) * factorial(position)
-    final_result += 1
-    print(final_result)
+final_result = 0
+for position, num in enumerate(list_num[:]):
+    checked_num_list = check(num)
+    final_result += len(checked_num_list) * factorial(position)
+final_result += 1
+print(final_result)
 
 # import itertools  # 一个神奇的库，用来弄全排列
 #
