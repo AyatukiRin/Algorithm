@@ -1,3 +1,7 @@
+"""
+这里使用了康托展开来计算，python库中自带全排列来求出字典序
+"""
+
 def check(num_for_check):
     checked_list = list(filter(lambda x: x < num_for_check, list_num))
     list_num.remove(num_for_check)
