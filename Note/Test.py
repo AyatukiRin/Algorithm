@@ -9,7 +9,3 @@
 # lt1 = [1, ['2', '3']]
 # print(lt1[1].index('2'))
 
-
-num = 5
-num = int(num / 2)
-print(num)
