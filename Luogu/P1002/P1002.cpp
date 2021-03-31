@@ -61,8 +61,6 @@
 #include <algorithm>
 
 int main() {
-    const int positionDangerX[] = {0, -2, -2, -1, -1, +1, +1, +2, +2};;
-    const int positionDangerY[] = {0, -1, +1, -2, +2, -2, +2, -1, +1};
     std::pair<int, int> positionB, positionHorse;
     std::cin >> positionB.first >> positionB.second >> positionHorse.first >> positionHorse.second;
     long long positionPawn[positionB.first + 2][positionB.second + 2];
@@ -78,5 +76,7 @@ int main() {
                 positionPawn[x][y] = 0;
             else positionPawn[x][y] = std::max(positionPawn[x - 1][y] + positionPawn[x][y - 1], positionPawn[x][y]);
     }
-    std::cout << positionPawn[positionB.first + 1][positionB.second + 1];
+    long a = positionPawn[positionB.first + 1][positionB.second + 1];   // 不加这个的话断点会跑不过来
+//    std::cout << positionPawn[positionB.first + 1][positionB.second + 1];
+    std::cout << a;
 }
