@@ -12,7 +12,10 @@
 # from decimal import Decimal
 # a = 12.345
 # print(Decimal(a).quantize(Decimal("0.00")))
+#
+# import re
+# a = 12.345
+# print(re.findall(r"\d+?\.\d{2}", str(a)))
 
-import re
-a = 12.345
-print(re.findall(r"\d+?\.\d{2}", str(a)))
+a = '12345'
+print(a.find('6'))
