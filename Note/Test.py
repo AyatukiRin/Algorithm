@@ -16,6 +16,8 @@
 # import re
 # a = 12.345
 # print(re.findall(r"\d+?\.\d{2}", str(a)))
+from symbol import decorator
 
-a = '12345'
-print(a.find('6'))
+lt = [1, 2, 3]
+lt = list(map((lambda x: x**2), lt))
+print(lt)
